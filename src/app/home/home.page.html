@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Traffic Light Control
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="traffic-light-container">
+    <div class="traffic-light">
+      <div class="light red" [class.on]="lampColor === 'red'"></div>
+      <div class="light yellow" [class.on]="lampColor === 'yellow'"></div>
+      <div class="light green" [class.on]="lampColor === 'green'"></div>
+    </div>
+  </div>
+</ion-content>
